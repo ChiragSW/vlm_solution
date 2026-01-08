@@ -3,7 +3,7 @@
 ### (A) Model Selection: Qwen-VL or Custom Modular
 I would choose **Qwen2.5VL** as the foundation.
 
-* **Why:** Unlike LLaVA, which uses a simple linear projection, Qwen-VL supports higher resolution inputs ($600 \times 600$+) and utilizes **coordinate tokens** (e.g., `<box>`) natively in its vocabulary. 
+* **Why:** Unlike LLaVA, which uses a simple linear projection, Qwen-VL supports higher resolution inputs (600 x 600+) and utilizes **coordinate tokens** natively in its vocabulary. 
 * **Factors:** * **Inference Speed:** The architecture supports 4-bit quantization, essential for <2s targets.
     * **Licensing:** It offers a commercially viable license for industrial applications.
     * **Localization:** It is pre-trained on grounding tasks, making it less prone to spatial "guessing" than BLIP-2.
